@@ -13,7 +13,7 @@ Dir.glob('**/*').each do |found_file|
 		printf("found directory %s\n", found_file)
 		next
 	end
-	# 拡張子が .strings のファイルは無視
+	# 拡張子が .m でないファイルは無視
 	file_extension = File.extname(found_file)
 	if file_extension != ".m" then
 #		printf("ignored %s\n", found_file)
